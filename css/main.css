@@ -25,27 +25,24 @@ img {
   width: 100%;
 }
 
+.photo {
+  display: block;
+}
 .photo:nth-child(2), .photo:nth-child(5) {
   display: none;
 }
 
 @media only screen and (min-width: 25em) {
 
-  .photo:nth-child(2), .photo:nth-child(5) {
-    display: block;
-  }
-
-  img {
+  section {
     display: flex;
-  }
-
-  .photo {
-    margin: 0;
+    flex-wrap: wrap;
   }
 
   .photo:nth-child(n+2) {
     width: 50%;
-    flex-wrap: nowrap;
   }
 
+  .photo:nth-child(2), .photo:nth-child(5) {
+    display: block;
 }
