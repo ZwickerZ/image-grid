@@ -15,3 +15,37 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.photo:nth-child(2), .photo:nth-child(5) {
+  display: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .photo:nth-child(2), .photo:nth-child(5) {
+    display: block;
+  }
+
+  img {
+    display: flex;
+  }
+
+  .photo {
+    margin: 0;
+  }
+
+  .photo:nth-child(n+2) {
+    width: 50%;
+    flex-wrap: nowrap;
+  }
+
+}
