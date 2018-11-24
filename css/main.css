@@ -45,4 +45,16 @@ img {
 
   .photo:nth-child(2), .photo:nth-child(5) {
     display: block;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+
+  .photo:nth-child(n+2) {
+    width: 33.3333%;
+  }
+
+  .photo:nth-child(5) {
+    display: none;
+  }
 }
